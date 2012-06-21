@@ -71,7 +71,7 @@ Screenshots
  ================================
  
  	<p>
- 	<img style="max-width:100%;" title="index" alt="index" src="https://github.com/ratnakarrao-nyros/ForFiles/raw/master/ForFiles/sceenshots/index.png">
+ 	<img style="max-width:100%;" title="index" alt="index" src="https://github.com/ratnakarrao-nyros/ForFiles/blob/master/ForFiles/sceenshots/index.png">
  	</p>
  	
 
