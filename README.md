@@ -30,7 +30,7 @@ Features
 
  Rails 3.2 , Ruby 1.8.7 versions and higher.
 
-  For sending mail just do following modifications
+  	For sending mail just do following modifications
 
 	open config/environments/development.rb file and then
 		
@@ -62,6 +62,6 @@ Features
 
 	As of now we wanted to show file operations with rails without need of Database and without
   
-any gem help to upload and browse files. In future we will extend this applications for searching content in files and more.We welcome your contribution.
+	any gem help to upload and browse files. In future we will extend this applications for searching content in files and more.We welcome your contribution.
 
 
