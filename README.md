@@ -65,5 +65,14 @@ Features
 	any gem help to upload and browse files. In future we will extend this applications for searching 
 	
 	content in files and more.We welcome your contribution.
+	
+Screenshots
+ 
+ ================================
+ 
+ 	<p>
+ 	<img style="max-width:100%;" title="index" alt="index" src="https://github.com/ratnakarrao-nyros/ForFiles/raw/master/ForFiles/sceenshots/index.png">
+ 	</p>
+ 	
 
 
