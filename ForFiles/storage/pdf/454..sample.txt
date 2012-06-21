@@ -1,0 +1,288 @@
+Objects and arrays
+
+CoffeeScript
+Quick Reference
+￿
+coffeescript.org
+￿
+￿
+General1
+· Whitespace is signiﬁcant
+· Ending a line will terminate expressions
+- no need to use semicolons
+· Semicolons can be used to ﬁt multiple
+expressions onto a single line
+· Use indentation instead of curly braces
+{ } to surround blocks of code in
+functions, if statements, switch, and
+try/catch
+
+· Comments starts with # and run to the
+end of the line
+
+Functions
+
+E. Hoigaard © 2554/2011 Rev. α
+
+If, Else, Unless, and Conditional Assignment
+
+· Objects and arrays are similar to
+JavaScript
+
+· Comprehensions for ... in
+over arrays, objects, and ranges
+
+· When each property is listed on its own
+line, the commas are optional
+
+· Comprehensions replace for loops,
+with optional when guard clauses and
+the value of the current array index:
+
+· Objects may be created using indentation instead of explicit braces, similar to
+YAML
+· Reserved words, like class, can be used
+as properties of an object without quoting them as strings
+
+Lexical Scoping and Variable Safety
+· Variables are declared implicitly when
+used (no var keyword).
+· The compiler ensures that variables are
+declared within lexical scope. An outer
+variable is not redeclared within an inner function when it is in scope
+· Using an inner variable can not shadow
+an outer variable, only refer to it. So
+avoid reusing the name of an external
+variable in a deeply nested function
+· CoffeeScript output is wrapped in an
+anonymous function, making it difﬁcult to accidentally pollute the global
+namespace
+
+· Functions are deﬁned by an optional list
+· To create top-level variables for other
+of parameters in parentheses, an arrow,
+scripts, attach them as properties on
+and an optional function body. The
+window, or to exports in CommonJS.
+empty function looks like: ->
+Use: exports ? this
+· Mostly no need to use parentheses to
+invoke a function if it is passed arguments. The implicit call wraps forward Splats
+to the end of the line or block expression.
+· Splats ... can be used instead of the
+variable number of arguments object
+· Functions may have default values for
+arguments. Override the default value
+and are available for both function defby passing a non-null argument.
+inition and invocation
+1
+
+Loops and Comprehensions
+work
+
+for value, index in array
+
+· Array comprehensions are expressions,
+and can be returned and assigned
+· Comprehensions
+may
+replace
+each/forEach, map or select/filter
+· Use a range when the start and end of a
+loop is known (integer steps)
+· Use by to step in ﬁxed-size increments
+· When assigning the value of a comprehension to a variable, CoffeeScript collects the result of each iteration into an
+array
+· Return null, undefined or true if a
+loop is only for side-effects
+· To iterate over the key and value properties in an object, use of
+· Use: for own key, value of object
+to iterate over the keys that are directly
+deﬁned on an object
+· The only low-level loop is the while
+loop. It can be used as an expression,
+returning an array containing the result
+of each iteration through the loop
+· until is equivalent to while not
+· loop is equivalent to while true
+· The do keyword inserts a closure wrapper, forwards any arguments and invokes a passed function
+
+· Multi-line conditionals are delimited by
+indentation
+· if and unless can be used in postﬁx
+form i.e. at the end of the statement
+· if statements can be used as expressions. No need for ?:
+
+Chained Comparisons
+· Use a chained comparison to test if a
+value is within a range:
+minimum < value < maximum
+
+Array Slicing and Splicing with Ranges
+· Ranges can be used to extract slices of
+arrays
+· With two dots [3..6], the range is inclusive (3, 4, 5, 6)
+· With three dots [3...6], the range excludes the end (3, 4, 5)
+· The same syntax can be used with assignment to replace a segment of an array with new values, splicing it
+· Strings are immutable and can not be
+spliced
+
+Embedded JavaScript
+
+Try/Catch/Finally
+· try/catch statements are as
+JavaScript (although expressions)
+
+· if/else can be written without parentheses and curly braces
+
+in
+
+· Use backquotes `` to embed JavaScript
+code within CoffeeScript
+
+Everything is an Expression
+· Functions return their ﬁnal value
+· The return value is fetched from each
+branch of execution
+· Return early from a function body by
+using an explicit return
+· Variable declarations are at the top of
+the scope, so assignment can be used
+within expressions, even for variables
+that have not been seen before
+· Statements, when used as part of an expression, are converted into expressions
+with a closure wrapper. This allows assignment of the result of a comprehension to a variable
+· The following are not expressions:
+break, continue, and return
+
+Operators and Aliases
+· CoffeeScript compiles == into ===, and
+!= into !==. There is no equivalent to
+the JavaScript == operator
+· The alias is is equivalent to ===, and
+isnt corresponds to !==
+· Logical operator aliases: and is &&, or is
+|| and not is an alias for !
+· In while, if/else and switch/when
+statements the then keyword can be
+used to keep the body on the same line
+· Alias for boolean true is on and yes (as
+in YAML)
+· Alias for boolean false is off and no
+· For single-line statements, unless can
+be used as the inverse of if
+· Use @property or @method instead of
+this.something
+
+· Use in to test for array presence
+· Use of to test for object-key presence
+
+Existential Operator
+· Use the existential operator ? to check if
+a variable exists. ? returns true unless
+a variable is null or undefined
+· Use ?= for safer conditional assignment
+than ||= with numbers or strings
+· The accessor variant of the existential
+operator ?. can be used to soak up null
+references in a chain of properties
+· Use ?. instead of the dot accessor . in
+cases where the base value may be null
+or undefined. If all of the properties exist then the expected result is returned,
+if the chain is broken, then undefined is
+returned instead
+
+Classes, Inheritance, and Super
+
+Destructuring Assignment
+· To make extracting values from complex arrays and objects convenient,
+CoffeeScript implements destructuring
+assignment
+· When assigning an array or object literal to a value, CoffeeScript breaks up
+and matches both sides against each
+other, assigning the values on the right
+to the variables on the left
+· The simplest case is parallel assignment
+[a,b] = [b,a]
+
+· It can be used with functions that return
+multiple values
+· It can be used with any depth of array
+and object nesting to get deeply nested
+properties and can be combined with
+splats
+
+· Multiple values, comma separated, can
+be given for each when clause. If any of
+the values match, the clause runs
+
+String Interpolation, Heredocs, and Block Comments
+· Single-quoted strings are literal. Use
+backslash for escape characters
+· Double-quoted strings allow for interpolated values, using #{ ... }
+· Multiline strings are allowed
+· A heredoc ''' can be used for formatted
+or indentation-sensitive text (or to avoid
+escaping quotes and apostrophes)
+· The indentation level that begins a heredoc is maintained throughout, so the
+text can be aligned with the body of the
+code
+
+· Object orientation as in most other ob· Double-quoted heredocs """ allow for
+ject oriented languages
+interpolation
+· The class structure allows to name the Function binding
+· Block comments ### are similar to
+class, set the superclass with extends,
+heredocs, and are preserved in the gen· The fat arrow => can be used to deﬁne a
+assign prototypal properties, and deﬁne
+erated code
+function and bind it to the current value
+a constructor, in a single assignable
+of this
+expression
+· Constructor functions are named as the
+· This is helpful when using callback- Extended Regular Expressions
+class name, to support reﬂection
+based libraries, for creating iterator
+· Extended regular expressions are defunctions to pass to each or event· Lower level operators: The extends
+limited by /// and are similar to herehandler functions to use with bind
+operator helps with proper prototype
+docs and block comments.
+setup. :: gives access to an object’s
+· Functions created with => are able to acprototype. super() calls the immediate
+· They ignore internal whitespace and
+cess properties of the this where they
+ancestor’s method of the same name
+can contain comments
+are deﬁned
+· A class deﬁnition is a block of executable code, which may be used for
+Aliases
+Switch/When/Else
+meta programming.
+· In the context of a class deﬁnition,
+and : &&
+or
+: ||
+not : !
+· The switch statement do not need a
+this is the class object itself (the
+break after every case
+is : ==
+isnt : !=
+constructor function),
+so static
+· A switch is a returnable, assignable exyes : true
+no
+: false
+properties can be assigned by using
+pression
+@property: value, and functions deon : true
+off : false
+ﬁned in parent classes can be called
+· The format is: switch condition, when
+with: @inheritedMethodName()
+clauses, else the default case
+http://autotelicum.github.com/Smooth-CoffeeScript/
+
+

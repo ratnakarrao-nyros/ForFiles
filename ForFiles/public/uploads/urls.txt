@@ -1,0 +1,156 @@
+===================David Heinemer Hanson Views(Special Interview) About Rails invention =================
+
+
+http://bigthink.com/ideas/21596
+
+
+
+====================== Version Control System(VCS)  ============================
+
+http://en.wikipedia.org/wiki/Version_control_system
+
+
+
+====================== Rails Pdf  ========================================
+http://ruby.railstutorial.org/chapters/filling-in-the-layout#sec:structure
+
+====================== Rails Advantages Over Other Frameworks ==============
+
+
+http://www.innovationontherun.com/why-rubys-mixins-gives-rails-an-advantage-over-java-frameworks/
+http://www.devarticles.com/c/a/Ruby-on-Rails/Advantages-of-the-Rails-Framework/1/
+
+
+
+===================== For RVM ====================
+
+http://www.the-tech-tutorial.com/?p=1868
+
+https://rvm.io//rvm/install/
+
+http://blog.sudobits.com/2011/10/27/how-to-install-ruby-on-rails-in-ubuntu-11-10/
+
+======================GEmset =========================
+http://ruby.about.com/od/rubyversionmanager/a/Using-Rvm-Gemsets.htm
+
+
+===================== Rails Tutorial ===================
+
+
+http://ruby.railstutorial.org/chapters/rails-3-1
+
+Github :-http://railsapps.github.com/rails.html
+
+
+About test/fixtures :http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+http://asciicasts.com/episodes/224-controllers-in-rails-3
+
+
+
+
+======================Bundler ===========================
+
+http://gembundler.com/rationale.html
+
+
+
+=======================About Rack =======================
+
+http://rack.rubyforge.org/doc/SPEC.html
+
+http://rack.github.com/
+
+http://rtomayko.github.com/rack-cache/
+
+=======================Release Notes ====================
+
+http://guides.heroku.com/3.0.0/2_2_release_notes.html#associations-respect-private-protected-scope
+
+
+http://www.infoq.com/news/2007/12/rails-20-docs(difference b/w 1.x and 2.x)
+http://www.mslater.com/post/104741-rails-1-2-rest-and-resources
+http://clarkware.com/blog/2006/03/28/rails-1-1-the-forgotten-features
+http://www.drdobbs.com/web-development/210200763
+http://weblog.rubyonrails.org/2007/12/7/rails-2-0-it-s-done/
+
+
+
+
+About Coffee Script 
+==========================
+http://railscasts.com/episodes/267-coffeescript-basics
+
+http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
+http://jashkenas.github.com/coffee-script/
+http://elegantcode.com/2011/06/30/exploring-coffeescript-part-2-variables-and-functions/
+
+
+=========Coffeescript Ajax ====================
+http://coffeescriptcookbook.com/chapters/jquery/ajax
+
+
+
+
+Release Notes
+==========================
+http://weblog.rubyonrails.org/releases/
+
+
+====================Sass tutorial ==============
+http://sass-lang.com/
+
+
+=============Editors =======================
+redcareditor.com
+www.sublimetext.com
+http://aptana.com
+www.jetbrains.com/ruby
+
+
+
+=====================Testing =================
+http://everydayrails.com/
+http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
+http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html
+http://www.endpoint.com/blog_archive/ruby_on_rails(Files)
+http://everydayrails.com/2012/04/07/testing-series-rspec-controllers.html
+
+
+======================== WireFrames =================
+
+http://speckyboy.com/2010/01/11/10-completely-free-wireframe-and-mockup-applications/
+
+
+======================== Form Tags And Form for Models ===========
+
+http://apidock.com/rails/ActionView/Helpers/FormHelper/form_for
+http://apidock.com/rails/ActionView/Helpers/FormTagHelper/form_tag
+http://apidock.com/rails/ActionView/Helpers/FormTagHelper/form_tag
+
+
+==========================Uploading Files =========================
+
+http://guides.rubyonrails.org/form_helpers.html#uploading-files
+
+=======================Working With Directories ===============
+
+http://stackoverflow.com/questions/2512254/iterate-through-every-file-in-one-directory
+http://ruby-doc.org/core-1.9.3/Dir.html
+
+
+About Convention over Configuration and Understanding Routes
+===============================================================
+http://guides.rubyonrails.org/layouts_and_rendering.html
+
+
+===============================About Docspilt ===============
+http://documentcloud.github.com/docsplit/
+
+Docsplit is a command-line utility and Ruby library for splitting apart documents into their component parts: searchable UTF-8 plain text, page images or thumbnails in any format, PDFs, single pages, and document metadata (title, author, number of pages...)
+
+
+
+
+
+=====================without having database  ========================
+http://stackoverflow.com/questions/3954307/rails-3-how-do-i-avoid-database-altogether

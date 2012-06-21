@@ -1,0 +1,23 @@
+<% require 'RMagick' %>
+<div id="file_name">
+	File Name : - <%= original_filename %>
+</div>
+<div id="file_content"> 
+	<% if !@path.blank? %>
+		<% if @ext_name == '.jpg' or @ext_name == '.png' or @ext_name == '.jpeg' or @ext_name == '.gif' %>
+		<%= link_to image_tag(File.join('uploads',original_filename), alt: original_filename,:height =>"100%",:weight => "100%"), '#' %>	  	
+		<% else %>
+			<% File.open(@path,'r') do |f|		
+				while !f.eof? %>
+					<%= f.readline	%>
+					<br />	 
+				<% end %>
+			<% end %>
+		<% end %>
+	<% end %>
+	<input type="hidden" value="<%= comment %>" name="file_path">
+	<input type="hidden" value="<%= original_filename %>" name="original_filename">
+</div>
+
+
+

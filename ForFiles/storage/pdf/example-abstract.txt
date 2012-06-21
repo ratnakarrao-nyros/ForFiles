@@ -1,0 +1,37 @@
+Sample One-Page Abstract for the Book
+of Abstracts of the Modelica Conference 2009
+Francesco Casella Alberto Leva
+Dipartimento di Elettronica e Informazione, Politecnico di Milano
+Piazza Leonardo da Vinci 32, 20133 Milano, Italy
+{casella,leva}@elet.polimi.it
+This document is an example of one-page abstract for the book of abstracts of the Modelica Conference 2009. The full conference proceedings will be only published electronically on a memory stick and on the Web. However, for the conference attendant’s convenience, a smaller book of abstracts will be printed and made available in the conference kit
+given to all participants.
+The goal of the book of abstracts is to provide the audience with some more information
+about the papers being presented, so they can choose which presentations to attend during
+parallel sessions. To this end, you can of course re-use the abstract provided when submitting the paper on the conference management system. However, consider that this page will
+be a sort of advertisement for your presentation, which will be read during coffe-breaks to
+decide if your presentation is worth listening to. Therefore, you can try to make it more
+attractive and informative. For this purpose, you can also include ﬁgures, such as Fig. 1,
+and a few optional references, such as [1] or [2].
+
+ﬁgure example
+Figure 1: Structure of the DNA double helix
+The one-page abstract should be written in English and prepared as a one-page, A4 PDF
+ﬁle (size 210×297 mm) using the Times font, 18 pt for the title, 13 pt for the authors’ names
+and afﬁliations, and 11 pt for the text. The left and right margins should be 3.5 cm, the top
+margin 3 cm and the bottom margin 2 cm. Please do not exceed these limits, or your PDF
+ﬁle will not be accepted. The page will then be scaled down slightly for printing. We advise
+A
+you to use the LTEXand MS Word templates provided on the conference website in order to
+ensure the correct formatting.
+Please also note that this abstract must be uploaded on the conference management
+system no later than July 13, 2009, and that at least one author should have registered by
+that time, for the ﬁnal paper to be included in the conference programme and proceedings.
+
+References
+[1] Watson, J.D, Crick F.H.C, A structure for the Deoxyribose Nucleic Acid, Nature 171,
+737-738, 1953.
+[2] Mattson, S.E., Elmqvist, H., Otter, M.: Physical system modeling with Modelica,
+Control Engineering Practice, v. 6, pp. 501-510, 1998.
+
+

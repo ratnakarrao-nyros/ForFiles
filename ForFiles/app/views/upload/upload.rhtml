@@ -1,0 +1,31 @@
+<!-- for uploading file -->
+<div id="content" class="row show-grid">
+	<div class="span12">
+		<h3> File Upload </h3>
+	
+		<div class="control-group">
+			<%= form_tag({:action => :uploadFile},:class => "well form-horizontal validate-form", :multipart => true) do %>
+				  <p>		   	
+					<%= file_field_tag 'picture',{:class => "file_field"} %>
+				  </p>
+				  <p>
+				  	<%= submit_tag "Save",{:class => "btn btn-primary"} %>
+				  </p>
+			<% end %>
+			
+			<p class="valid" style="display:none">
+				File should be in valid format &nbsp;(ex- .doc,.txt,.pdf)
+			</p>
+			<p class="empty" style="display:none">
+				Please select file
+			</p>
+		</div>
+		<div class="success_msg">
+			<%= @notice %>
+		</div>
+	</div>
+</div>
+
+
+
+

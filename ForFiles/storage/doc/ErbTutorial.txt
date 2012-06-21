@@ -1,0 +1,491 @@
+ERB TUTORIAL
+NAME:
+• Includes last name (surname), full first name, full middle name or middle initial (if no middle name) and
+designations such as "JR," SR," "II" (2d) or III (3d).
+•
+
+Max number of characters allowed is 27.
+
+•
+
+Transaction updates are input as PSB/MPD/BCT level. Source documents include DD Form 4, DA Form
+4187, marriage certificate, divorce decree, etc. References for additional information include DA PAM
+600-8 and para 6-21, AR 600-8-104.
+
+•
+
+Send SRDC a copy of your name change documents (approved DA Form 4187) to change the name on
+your OMPF.
+
+RANK - DOR (Rank - Date of Rank):
+• Rank - Abbreviation for the rank in which the Soldier is currently serving.
+•
+
+DOR - Date of rank for the grade in which the Soldier is currently serving on active Duty.
+
+•
+
+Transactions for PV2 thru SPC are updated at unit level; SGT and SSG are updated by the Promotions
+Section of the PSB/MPD/BDC; while SFC and above are HRC top fed. Reductions may be done at unit
+level.
+
+PMOS (Primary Military Occupational Specialty):
+• The military occupational specialty (MOS) designated as primary, e.g. 42A. It does not include Special
+Qualification Identifiers (SQI's) and Additional Skill Identifiers (ASI's).
+•
+
+Transaction updates are done at PSB/MPD/BCT level, with a copy of MOS award orders.
+
+SSN (Social Security Numbers):
+• 9-digit SSN is shown without hyphens.
+•
+
+SSN may be changed or updated at PSBS/MPD/BCT level with supporting documents. Source
+documents include DA Form 4187 and social security card or other applicable documents. Reference for
+further information is DA PAM 600-8.
+
+COMPONENT:
+• Component in which the Soldier was enlisted, i.e. Regular for Regular Army and Reserve for United
+States Army Reserve (USAR).
+SECTION I - ASSIGNMENT INFORMATION
+SHORT:
+• Number of short overseas tours Soldier completed.
+•
+
+This data entry is a result of automatic calculation.
+
+LONG:
+• Number of long overseas tours Soldier completed.
+•
+
+This data entry is a result of automatic calculation.
+
+START - END DATE:
+
+•
+
+Start and end date Soldier served on overseas tour or deployment.
+
+•
+
+Maximum is seven of the most recent overseas tours and deployments.
+
+•
+
+The minimum length of deployed service to be posted is 30 consecutive days of 60 non-consecutive days
+during a 12 month period.
+
+•
+
+Tour completion requirements are stipulated in AR 614-30.
+
+•
+
+Transaction may be updated at MPD/PSB/BCT/SSB level by updating the Assignment History screen
+(Tour Credits).
+
+•
+
+Format for dates is YYYYMMDD. Actual dates on Soldier's orders must be used.
+
+CT (Country):
+• Overseas area only. Indicates country the Soldier served in during overseas assignment or deployment.
+•
+
+Location codes may be found in the eMILPO Drop Down Menu (Assignment Considerations).
+
+MO - (Month):
+• The number of months a Soldier served in overseas location.
+•
+
+This data entry is a result of automatic calculation.
+
+TS (Tour Completion Status):
+• Indicates tour completion status of Soldier. Codes indicate the following:
+- Code of "1" represents normal tour complete.
+- Code of "2" represents normal tour not complete.
+- Code of "3" represents tour complete without dependents in a dependent restricted area.
+- Code of "4" represents tour incomplete in a dependent restricted area.
+TT (Tour Type):
+• Type of tour completed by Soldier. Codes are as follows:
+- L = Long Tour
+- S = Short Tour
+- C = Combat
+- O = Operational (Non-combat)
+- R = Dependent Restricted
+# (Number of C-O-R {Combat/Operational/Restricted}):
+• Number of combat deployments, operational deployments (non-combat) and dependent restricted tours
+served by Soldier. Codes represent the following:
+- C (Combat Deployment ) Defined as an operation in a designated combat zone.
+- O (Operational Deployment) Non-combat overseas deployments other than those designated as a
+combat deployment, such as a peacekeeping/enforcement overseas, e.g. Balkans, Guantanamo
+Bay.
+- R (Dependent Restricted Tour) Tour areas stipulated as dependent restricted in AR 614-30,
+regardless of whether or not the Soldier has dependents.
+•
+
+For Soldiers that complete more than 8 ½ months of a dependent restricted tour, the system will award
+overseas short tour credit.
+
+•
+
+Update of entry requires source documents such as orders, evaluations, awards, LES, etc.
+
+M (Months):
+• The number of months a Soldier deployed to a combat or operational deployment or dependent restricted
+area.
+
+•
+
+This data entry is a result of automatic calculation.
+
+DEROS:
+• The date eligible for return from overseas tour applies only to personnel serving on an overseas
+assignment. For personnel serving within CONUS, this entry will be blank.
+•
+
+Transaction may be updated at PSB/MPD/BCT level.
+
+DROS (Date Returned from Overseas):
+• DROS Transaction is automatically generated when a Soldier signs into the gaining installation upon
+returning from last overseas assignment. DROS update is only available if the Soldier actually had an
+overseas assignment. Erroneous entries may require PAS / eMILPO support.
+PMOS (Primary Military Occupational Specialty):
+• The Military Occupational Specialty (MOS) designated as primary, e.g. 42A. It does not include Special
+Qualification Identifiers (SQI's) and Additional Skill Identifiers (ASI's).
+•
+
+Transaction updated may be done at PSB/MPD/BCT level with a copy of MOS award orders.
+
+•
+
+For current information on MOS structure and changes you may refer to
+https://www.ArmyG1.Army.Mil/pamxxi/secured/mosstructure/mos-charts.asp.
+
+SMOS (Secondary Military Occupational Specialty):
+• The secondary Military Occupational Specialty (MOS) is shown, if held.
+•
+
+An SMOS cannot be removed without withdrawing the related ASI and SQI.
+
+SQI (Special Skill Identifier):
+• The appropriate SQI awarded the Soldier which is associated with or related to the Primary Military
+Occupational Specialty (PMOS). The reference for SQI precedence is AR 614-200.
+•
+
+This transaction is linked to schools and badges.
+
+•
+
+The system will not display a SQI unless it is compatible with the Soldier's grade and PMOS.
+
+•
+
+SQI for Ranger-Parachutist, "V", may only be input by HRC. A recent change packet allows the Drill
+Sergeant SQI "X" to be updated at MPD/PSB/BCT level.
+
+•
+
+Send SRDC a copy of all DA Form 1059's (Academic Evaluation Report) for file on OMPF.
+
+ASI (Additional Skill Identifier):
+• The appropriate additional skill identifier awarded the Soldier which is associated with or related to the
+Primary Military Occupational Specialty (PMOS).
+•
+
+This transaction is linked to schools and badges.
+
+•
+
+Send SRDC a copy of all course completion certificates for file on OMPF.
+
+SECTION III - SERVICE DATA
+BASD (Basic Active Service Date):
+• Format for BASD is YYYYMMDD.
+•
+
+BASC indicates total active Federal service creditable for retirement. For personnel with no prior service,
+the BASD is the date of enlistment of induction. For personnel with prior service, the BASD is the date of
+enlistment or induction minus total active Federal service (DD Form 1966/2), item 25 (Application for
+
+Enlistment-Armed Forces of the United States (page 2) for current enlistment) and any periods at AT and
+AD while in Reserve status.
+•
+
+This transaction is top-fed. Transaction updates may be done at PSB/MPD/BCT level. Once the
+PSB/MPD/BCT completes the DA form 1506 it is forwarded to DFAS. Erroneous entries may require
+PAS/eMILPO assistance.
+
+•
+
+BASD will be adjusted based on AWOL, confinement, civil confinement and line of duty investigations
+found - not in line of duty.
+
+# DAYS LOST:
+• Number of days that Soldier was absent from organizations as follows:
+- Desertion.
+- Absent from organization, station or duty for more than 24 hours without proper authority.
+- Confinement for more than 24 hours while awaiting trial and disposition of case and whose conviction
+has not become final.
+- Confinement for more than 24 hours under a sentence that has become final.
+- Unable for more than 24 hours, as determined by competent authority, to perform duties because of
+intemperate use of drugs, alcoholic beverages, or because of injury result from misconduct.
+•
+
+When a soldier has lost time, all service dates to include the BASD/PEBD/BESD/ETS and Date of Rank
+(DOR) must be adjusted.
+
+DOR (Date of Rank):
+• Date of rank for each grade Soldier was promoted. Personnel with prior service must have their BASD
+adjusted IAW AR 600-20.
+•
+
+Rank history in the grade of PV2 thru CSM may be updated by the PSB/MPD/BCT.
+
+SECTION IV - PERSONAL FAMILY DATA
+DATE OF BIRTH:
+• Format for the date of birth entry is YYYYMMDD.
+PULHES:
+• Finding of the latest medical examination as determined and furnished by the medical officer. Reference
+to explain PULHES is AR 40-501.
+•
+
+Represents functional capacity of a particular organ or system of the body using the numerical
+designation of 1, 2, 3 and 4.
+
+•
+
+Factors include:
+P - Physical capacity or stamina
+U - Upper extremities
+L - Lower Extremities
+H - Hearing and ears
+E - Eyes (color vision limitations only)
+S - Psychiatric
+
+•
+
+Transaction is updated by the Physical Evaluation Section using MEDPROS.
+
+•
+
+PULHES containing a 3 or 4 require MOS Medical Retention Board Results and date posted in MMRB/DT
+entry.
+
+LAST PHYS EXAM (Last Physical Examination):
+• Date of latest medical examination as furnished by the examining medical officer.
+•
+
+Format for date of entry is YYYYMMDD.
+
+•
+
+Transaction is updated by the Physical Evaluation Section using MEDPROS. Source document is the SF
+Form 88, Report of Medical Examination.
+
+MMRB RESULTS/DT (MOS Medical Retention Board Results/Date):
+• MOS Medical Retention Board (MMRB) determination, e.g. retain in PMOS, recommended
+reclassification, probationary status not to exceed (NTE) six months, or refer to physical disability system
+and date of proceedings. Reference for MMRB is AR 600-60.
+•
+
+The date used is the date the Brigade Commander established in the memorandum (or other appropriate
+instrument) that announced the convening date of the MMRB, unless the actual date was changed.
+
+•
+
+For directed retention in a PMOS or specialty code by MMRB, file summary of proceedings together with
+decision to retain to SRDC for file on OMPF. Do not send copy of file enclosures. Do not send copy of file
+enclosures.
+
+SECTION V - FOREIGN LANGUAGE
+LANGUAGE:
+• Foreign language Soldier has or had proficiency in. Once a Soldier has proficiency in a language, it will
+not be deleted.
+•
+
+Transactions for language proficiency (Read/Listen/Speak) are DA top-fed by the HRC MP-MI Language
+Branch, upon receipt of DA Fm 330 from the Test Control Officer (TCO). Unprocessed transactions may
+require PAS / Field Systems Division (FSD) assistance.
+
+READ:
+• Reading comprehension level of a foreign language.
+LISTEN:
+• Listening comprehension level of a foreign language.
+SPEAK:
+• Speak proficiency level of a foreign language.
+DLAB (Defense Language Aptitude Battery):
+• Defense Language Aptitude Battery score.
+•
+
+Must be in the range of 012 through 164.
+
+•
+
+Test scores may be updated by the PSB/MPD/BCT upon receiving authorized document from the TCO.
+
+SECTION VI - MILITARY EDUCATION
+MEL/MES (Military Education Level/Military Education Status):
+• Highest Military Education Level and Military Education Status.
+
+•
+
+Military Education Statuses may include Graduated, Constructive Credit, Enrolled, Deferred, Declined,
+Selected (extension not needed), Withdrawn, None or Denied Enrollment.
+
+•
+
+Military education level is top-fed from TAPDB, and may be updated by Noncommissioned Officers
+Education System (NCOES) Branch, HRC.
+
+SECTION VII - CIVILIAN EDUCATION
+LEVEL COMPLETED:
+• Highest civilian education level attained at colleges or universities listed in the Accredited Institutions of
+Posted Secondary Education Guide.
+•
+
+Civilian Education entries include 4 YRS HS, 1 YR COLL, 6 YR COLL, etc.
+
+•
+
+Every 30 semester hours of civilian education is equivalent to one (1) year of college.
+
+•
+
+Transaction is input by the PSB/MPD/BCT. Source documents include official transcripts (official college
+transcripts with registrar's signature and school seal visible).
+
+•
+
+Send SRDC a copy of your official college transcripts with registrar's signature and school seal visible.
+
+YR (Year):
+• Year education completed or degree awarded.
+DESG (Designation):
+• Highest civilian education level attained at colleges or universities listed in the Accredited Institutions of
+Post Secondary Education Guide.
+•
+
+Entries format includes HS DIPL, Complete 1 Semester College, 60 OR MORE SEM HRS COL CRED,
+ASSOCIATE DEGREE and MASTERS DEGREE.
+
+•
+
+Transaction is input by the PSB/MPD. Source Documents include official transcripts (official college
+transcripts with registrar's signature and school seal visible.
+
+•
+
+Send SRDC a copy of your official college transcripts with registrar's signature and school seal visible.
+
+TOTAL # OF HOURS (Correspondence Courses):
+• Self-explanatory.
+•
+
+Transaction updates are input at PSB/MPD/BCT level. The source document to receive correspondence
+course credit is the sub-course completion notice, published by https://www.aimsrdl.atsc.army.mil/.
+
+•
+
+The maximum number of credit hours that may be posted is 999.
+
+•
+
+Soldiers cannot have correspondence and Military Education Training posted for the same courses.
+
+COURSE:
+• Description of military school/courses attended. MOS producing courses are not listed on the ERB.
+•
+
+Maximum of 15 military schools.
+
+•
+
+Transaction updates are input at PSB/MPD/BCT level. Source documents include the DA Form 87,
+Certificate of Training. Course codes are listed in the eMILPO Functional Guidance, under Course Codes.
+
+YEAR:
+• Year military school/courses were completed.
+
+NUMBER OF SEMESTER HOURS COMPLETED:
+• Self-explanatory.
+
+TECHNICAL CERTIFICATION
+COURSE NAME:
+• Name of technical certification course completed.
+•
+
+Data entry is currently not available for enlisted personnel.
+
+DT CERTIFIED:
+• Date certification course was completed.
+•
+
+Data entry is currently not available for enlisted personnel.
+
+DT EXPIRES:
+• Date course certification expires.
+•
+
+Data entry is currently not available for enlisted personnel.
+
+SECTION VIII - AWARDS AND DECORATIONS
+•
+
+Includes all military decorations, campaign service awards, non-military decorations/awards, identification
+badges, unit awards (permanent), combat/special skill badges and battle campaign participation.
+Reference for military awards is AR 600-8-2. Authorization for unit awards is located in MILPER
+Messages at https://www.hrc.army.mil/site/active/TAGD/awards/Unit_Awards/unit_awards.htm.
+
+•
+
+The maximum number of awards displayed is 34.
+
+•
+
+Transaction input by PSB/MPD upon receipt of orders, DA Form 638 (Series) or award certificate which
+contains the permanent order number. Some awards are authorized based on HQDA Letters.
+
+•
+
+Copies of supporting orders for all awards, badges, etc., and HQDA approval for foreign awards must be
+send to SRDC for posting on the OMPF.
+
+SECTION IX - ASSIGNMENT INFORMATION
+FROM:
+• From or effective date of assignment. Eight (8) digit dates will be used, i.e. YYYYMMDD.
+MO (MONTHS):
+• Number of months Soldier served in assignment.
+•
+
+Entry is blank for current assignment.
+
+UNIT NO (UNIT NUMBER):
+• Number of unit of assignment or UIC.
+ORGANIZATION:
+• Description of unit of assignment.
+STATION:
+• Station of assignment, e.g. Ft. Lewis, Korea, etc.
+
+COMD (COMMAND):
+• Major command in which Soldier is assigned.
+•
+
+Transaction may be updated at PSB/MPD/BCT level. Command codes are listed in the eMILPO "Data
+Store."
+
+DUTY TITLE:
+• The title of the position to which the Solider is currently assigned as reflected in the authorization
+document, Modification Table of Organization and Equipment (MTOE), Tables of Distribution and
+Allowances (TDA) or Joint Tables(s) of Distribution (JTD).
+DMOS (Duty Military Occupational Specialty):
+• The Duty MOS specified in the Modification Table of Organization and Equipment (MTOE), Tables of
+Distribution and Allowances (TDA) or Joint Table(s) of Distribution (JTD).
+ASI (Additional Skill Identifier):
+• The ASI specified in the Modification Table of Organization and Equipment (MTOE) , Tables of
+Distribution and Allowances (TDA) or Joint Table(s) of Distribution (JTD).
+LANG (Language):
+• This entry reflects the Language Indicator Code (LIC) contained in the Table(s) of Organization and
+Equipment (TOE) or Tables of Distribution and Allowances (TDA) for the duty position.
+
+

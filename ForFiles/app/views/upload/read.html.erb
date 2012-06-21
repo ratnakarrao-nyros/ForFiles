@@ -1,0 +1,91 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('.delete').click(function(){	
+		var me=$(this)	
+		$.get('/upload/delete_file',{id:$(this).attr("file_id")},function(data){
+			if(data){
+				me.parent().parent().hide("slow");				
+				}
+			
+		})
+	})
+
+	})
+</script>
+
+
+<div id="content" class="row">
+<div class="span12 well">
+	<h3> List Of Files </h3>
+<table align="center" width="50%" class="table table-condensed table-striped">
+	<thead>
+		<th>No</th><th>FileName</th>
+	</thead>	
+	<% if !@file_names.blank? %>  
+		<% @file_names.each_with_index do |file_name,index| %>
+			<% if  File.file?(File.join(DIRECTORY_PATH,file_name)) %>	
+				<tr>    
+					<td><%= index-1 %></td>
+					<td><a href="#show" class="new" file_id="<%= index %>" ><%= file_name %></td>
+					<td><a href="#" file_id="<%= index %>" class="delete btn btn-danger btn-mini">Delete</a></td>
+				</tr>
+			<% end %>
+		<% end %>
+	<% end %>
+	
+</table>
+<div style="margin-bottom:30px"></div>
+<table align="center" width="50%" style="border:0px">
+	<tr>
+		<td colspan="2" id="success" style="color:green"><% if !@success.blank? %>
+			<%= @success %>
+			<% end %>
+		</td>
+	</tr>
+</table>
+
+</div>
+</div>
+
+<div id="myne" style="display:none">
+	<div id="show" style="width:700px;overflow:auto;height:400px" file_id="">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".new").click(function(){	
+				$.get('/upload/showFile',{id: $(this).attr("file_id")},function(data){	
+				$("#data").html(data);
+				});
+					});
+				$(".mail_link").click(function(){
+					$('.mail_fields').css("display","block");
+						
+				})
+			 });
+		</script>
+	<%= form_tag({:action => :send_mail, :controller => :upload},:class => "read-form", :multipart => true) do %> 
+			 <div id="data">
+			 
+			 </div>
+			 <p>
+				<a href="#" class="mail_link">Click to send it your mail</a>
+			 </p>
+			 <p class="empty" style="display:none">
+				Please Enter Email-id
+			 </p>
+		      	 <p class="email" style="display:none">
+				Please Enter Valid Email-id
+			 </p>
+			 <p style="display:none" class="mail_fields">
+				<lable for="mail">Mail id</lable>
+				<input type="text" name="mail_id" class="mail_id"><br />
+				<input type="submit" value="send" class="btn btn-primary">
+					
+			 </p>	
+	<% end %>
+	</div>
+</div>
+
+
+
+
+
