@@ -69,6 +69,8 @@ Features
 Screenshots
  
  ================================
+ 
+ 
  <a target="_blank" href="https://github.com/ratnakarrao-nyros/sinatra-admin/raw/master/screenshots/index.png">
 <img style="max-width:100%;" src="https://github.com/ratnakarrao-nyros/ForFiles/raw/master/ForFiles/sceenshots/index.png" alt="index" title="index">
 </a>
