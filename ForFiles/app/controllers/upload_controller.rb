@@ -39,7 +39,7 @@ class UploadController < ApplicationController
  def delete_file
 	@file_id=params[:id]
 	@file=DataFile.delete(@file_id)
-	render :nothing => true
+	render :nothing => true 
  end
 
   
@@ -49,7 +49,16 @@ class UploadController < ApplicationController
 	@file_names=DataFile.read
 	render "read"
   end
-  
+
+  def search
+	Spider.indexing_files
+	@results=Query.search_in_files(params[:key])
+	if @results.blank? 
+		@failure="No Results Found"
+	end
+	render "read"
+  end
+
 end
 
 

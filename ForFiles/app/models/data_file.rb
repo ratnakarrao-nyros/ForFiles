@@ -1,9 +1,5 @@
 require 'fileutils'
 class DataFile < ActiveRecord::Base
-	has_attached_file :picture,
-        :path => ":rails_root/public/upload/:filename",
-        :url => "/uploads/:style/:filename"
-
 	
 	def self.save(upload)
 		ext_name=File.extname(upload.original_filename)
@@ -17,7 +13,7 @@ class DataFile < ActiveRecord::Base
 		else
 		  	File.open(File.join(DIRECTORY_PATH, upload.original_filename), 'wb') do |file|
 		  		file.write(upload.read)
-		 	end
+		 	end			
 		end	
 	end
 	
@@ -42,7 +38,7 @@ class DataFile < ActiveRecord::Base
 		elsif ext_name == '.pdf'
 			Docsplit.extract_text(path,:ocr => false,:output =>'storage/pdf')
 			@path=File.join('storage/pdf',file.chomp(File.extname(file))+'.txt')
-		else
+		else	
 			@path=path
 		end
 	end
@@ -59,6 +55,15 @@ class DataFile < ActiveRecord::Base
 			end		
 		end
 	end
+
+
+	def self.search(search_key)
+		#Dir.entries(DIRECTORY_PATH).each do |file|
+		#	 puts  /file/.match(search_key) 				
+		#end	
+	end
+
+
 
 end
 

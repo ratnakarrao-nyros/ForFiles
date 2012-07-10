@@ -16,6 +16,14 @@
 
 <div id="content" class="row">
 <div class="span12 well">
+ 			<!-- for search functionality -->
+
+	<%= form_tag({:action => :search ,:controller => :upload},:class => "form-search pull-right" ,:multipart => true ) do  %>
+		<input class="input-medium search-query" type="text" name="key">
+		<button class="btn" type="submit">Search</button>
+	<% end %>
+
+			<!-- Displaying files -->
 	<h3> List Of Files </h3>
 <table align="center" width="50%" class="table table-condensed table-striped">
 	<thead>
@@ -25,14 +33,34 @@
 		<% @file_names.each_with_index do |file_name,index| %>
 			<% if  File.file?(File.join(DIRECTORY_PATH,file_name)) %>	
 				<tr>    
-					<td><%= index-1 %></td>
+					<td><%= index+1 %></td>
 					<td><a href="#show" class="new" file_id="<%= index %>" ><%= file_name %></td>
 					<td><a href="#" file_id="<%= index %>" class="delete btn btn-danger btn-mini">Delete</a></td>
 				</tr>
 			<% end %>
 		<% end %>
 	<% end %>
-	
+
+
+			<!-- Seaching Results ----->
+
+ 
+
+
+	<% if !@results.blank? %>
+		<% @results.matches.each do |m| %>
+				<tr>
+					<td><%= m.rank+1 %></td>
+					<td><a class="new" href="#show"><%= m.document.value(m.docid) %></a>
+					</td>
+				</tr>
+	 	<% end %>
+	<% else %>
+			<tr>
+				<td colspan="2" style="color:red;text-align:center"> <%= @failure %>
+				</td>
+			</tr>
+	<% end %>	
 </table>
 <div style="margin-bottom:30px"></div>
 <table align="center" width="50%" style="border:0px">
@@ -84,6 +112,10 @@
 	<% end %>
 	</div>
 </div>
+
+
+
+
 
 
 
