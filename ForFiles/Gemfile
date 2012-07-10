@@ -4,13 +4,20 @@ gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'docsplit'
 gem 'sqlite3'
 gem 'therubyracer'
 gem 'tlsmail'
 gem 'rmagick'
 gem 'paperclip'
+gem 'xapian-ruby'
+gem 'datamapper'
+gem 'xapian-fu'
+gem 'pdf_utils'
+gem 'antiwordr'
+gem 'prawn'
+gem 'xapian-full'
+gem 'xapian-core'
 
 # Gems used only for assets and not required
 # in production environments by default.
